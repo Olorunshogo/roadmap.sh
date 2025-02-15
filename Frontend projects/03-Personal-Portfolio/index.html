@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Roadmap.sh Basic HTML Website">
+
+        <!-- There's no law requiring they heed but, this meta tag inform robots not to index the site by search engines -->
+        <meta name="robots" content="index, follow" />
+        <title>HTML Basic Website</title>
+
+        
+        <meta name="author" content="BAMTEFA Olorunshogo Moses">
+        <meta name="description" content="BAMTEFA Olorunshogo Moses' Basic HTML Website showcasing projects, workexperiences, education and reviews from my teachers" >
+        <meta name="keywords" content="Full Stack Developer, HTML5, CSS3, Vue">
+        <meta property="og:title" content="BAMTEFA Olorunshogo Moses - Web Developer">
+        <meta property="og:description" content="Check out BAMTEFA Olorunshogo Moses professional background and skills.">
+        <meta property="og:url" content="https://mutonatheton.me/">
+
+        <!-- STYLESHEET -->
+         <link rel="stylesheet" href="/Frontend projects/03-Personal-Portfolio/style.css">
+
+        <!-- FAVICON LINK -->
+        <link rel="shortcut icon" href="./Roadmap_icon.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <div>
+
+            <header class="hero-page">
+                <!-- TOP NAV -->
+                <div class="top-nav">
+                    <div class="logo">
+                        <img src="./Roadmap_icon.png" alt="Roadmap Logo">
+                        <p title="Name">BAMTEFA, Olorunshogo Moses</p>
+                    </div>
+
+                    <nav role="navigation" title="Navigation links">
+                        <a href="http://" target="_blank" rel="noopener noreferrer" title="Home">Home</a>
+                        <a href="./projects.html" target="_blank" rel="noopener noreferrer" title="Projects"> / Projects</a>
+                        <a href="./articles.html" target="_blank" rel="noopener noreferrer" title="Articles"> / Articles</a>
+                        <a href="./contact.html" target="_blank" rel="noopener noreferrer" title="Contact"> / Contact</a>
+                    </nav>
+                </div>
+
+                <div class="hero">           
+                    <h1>Frontend Developer</h1>
+                    <p>HTML only with proper layout, no styling</p>
+                </div>
+            </header>
+
+            <section class="section-one">
+                <div class="row-one">
+                    <h2>Projects</h2>
+                    <p>HTML Only Portfolio</p>
+                    <p>Calculator</p>
+                    <p>Quiz App</p>
+                    <p>Countdown Timer</p>
+                    <p>Product Upcoming Page</p>
+                </div>
+
+                <div class="row-two">
+                    <h2>Work Experience</h2> 
+
+                    <div>
+                        <p>roadmap.sh</p>
+                        <p>Solved all the frontend projects.</li>
+                        <a href="https://roadmap.sh/Showgo001" target="_blank" rel="noopener noreferrer">Visit my Profile</a>
+                    </div>
+
+                    <div>
+                        <p>OpenSource Work</p>
+                        <p>Contributed to 50 opensource projects.</p>
+                        <p>
+                            Made my own projects with 200 GitHub Stars
+                            <a href="https://github.com/Olorunshogo" target="_blank" rel="noopener noreferrer">Visit my GitHub Profile</a>
+                        </p>                        
+                    </div>
+                </div>
+
+                <div class="row-three">
+                    <h2>Education</h2>
+                    <p>Graduated with 3.75 out of 4 CGPA. Won Acme Hackaton. Organized 30 sessions.</p>
+
+                    <p>Courses I took:</p>
+                    <ul>
+                        <li>- Data Structures and Algorithms</li>
+                        <li>- Web Engineering</li>
+                        <li>- Artificial Intelligence</li>
+                        <li>- Object Oriented Programming</li>
+                        <li>- Human Computer Interaction</li>
+                        <li>- Computer Graphics</li>
+                        <li>- Distributed Database Systems</li>
+                        <li>- Discreel Mathematics</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-two">
+                <h2>Reviews from my Teachers</h2>
+
+                <div class="reviews">
+                    <div class="one">
+                        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                        <div>
+                            <p>Jane Doe</p>
+                            <p>Assistant Professor</p>
+                        </div>
+                    </div>
+    
+                    <div class="two">
+                        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                        <div>
+                            <p>Jane Doe</p>
+                            <p>Assistant Professor</p>
+                        </div>
+                    </div>
+    
+                    <div class="three">
+                        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                        <div>
+                            <p>Jane Doe</p>
+                            <p>Assistant Professor</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&COPY; all rights reserved <span id="currentYear"></span></p>
+            </footer>
+        </div>
+
+        <script>
+            const date = new Date();
+            document.getElementById('currentYear').innerHTML = date.getFullYear();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+
+/* OSWALD  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* OPEN SANS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-padding: 20px;
+    --top-nav-height: 50px;
+    --big-gap: 20px;
+    --small-gap: 10px;
+}
+
+/* HEADERS */
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+    font-size: 0.8rem;
+    max-width: 1400px;
+    margin: auto;
+    text-align: left;
+}
+
+body > div {
+    margin-top: var(--body-padding);
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+section {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    margin-top: 40px;
+}
+
+/* HERO Section */
+.hero-page .top-nav {
+    width: 100%;
+    height: var(--top-nav-height); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--big-gap);
+    padding: 0 var(--big-gap);
+}
+
+.hero-page .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--small-gap);
+}
+
+.hero-page .logo img {
+    width: calc(var(--top-nav-height) - 10px);
+    height: calc(var(--top-nav-height) - 10px );
+}
+
+.hero-page nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: var(--small-gap);
+}
+
+.hero-page .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hero-page .hero h1 {
+    font-weight: 700;
+}
+
+/* SECTION ONE */
+.section-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    gap: 10px;
+    padding: 0 var(--big-gap);
+}
+
+.section-one .row-one {
+    max-width: 180px;
+    flex: 0 0 20%;
+}
+
+.section-one .row-one p {
+    padding: 3px 0;
+}
+
+.section-one .row-two {
+    max-width: 400px;
+    flex: 0 0 35%;
+    gap: var(--small-gap);
+}
+
+.section-one .row-two > div {
+    padding: 4px 0;
+}
+
+.section-one .row-one p,
+.section-one .row-two p {
+    padding: 2px 0;
+}
+
+.section-one .row-three {
+    max-width: 400px;
+    flex: 0 0 35%;
+}
+
+.section-one .row-three p {
+    padding: 4px 0;
+}
+
+/* SECTION TWO */
+.section-two {
+    width: 100%;
+    height: 100%;
+    gap: var(--big-gap);
+    padding: var(--big-gap);
+}
+
+.section-two .reviews {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--big-gap);
+    font-size: 12px;
+    margin-top: var(--big-gap);
+}
+
+.section-two .reviews .one,
+.section-two .reviews .two,
+.section-two .reviews .three {
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    display: grid;
+    padding: var(--big-gap);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.section-two .reviews .one > div,
+.section-two .reviews .two > div,
+.section-two .reviews .three > div {
+    color: lightslategray;
+}
+
+ /* FOOTER */
+ footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    /* HERO Section */
+    .hero-page .top-nav {
+        width: 100%;
+        height: 100%; 
+        flex-direction: column;
+    }
+
+    .hero-page .logo {
+        flex-direction: column;
+    }
+
+    .hero-page .hero {
+        margin: var(--small-gap);
+    }
+
+    /* SECTION ONE */
+
+    .section-one {
+        flex-direction: column;
+    }
+
+    .section-one h2 {
+        text-align: center;
+    }
+
+    .section-one p,
+    .section-one .row-two > div,
+    .section-one .row-three ul {
+        background-color: lightgray;
+    }
+
+    .section-one .row-one,
+    .section-one .row-two,
+    .section-one .row-three {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    
+    .section-one .row-two > div {
+        padding: 4px 0;
+    }
+
+    /* SECTION TWO */
+    .section-two .reviews {
+        display: flex;
+        flex-direction: column;
+        gap: var(--big-gap);
+    }
+
+   
+}
