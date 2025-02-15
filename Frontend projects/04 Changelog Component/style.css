@@ -1,0 +1,119 @@
+
+/* OSWALD  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* OPEN SANS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --page-padding: 3rem;
+    --top-margin: 10%;
+    --big-gap: 20px;
+    --small-gap: 10px;
+}
+
+/* HEADERS */
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "width" 100;
+    font-size: 0.8rem;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: left;
+}
+
+.page-container {
+    padding: var(--page-padding);
+    margin-top: var(--top-margin);
+    border: 1px solid black;
+    border-radius: 2rem;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+header p {
+    color: slategray;
+}
+
+.page-container div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: var(--big-gap);
+}
+
+.page-container ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.page-container ul li {
+    padding: var(--small-gap) 0;
+    position: relative;
+}
+
+.page-container ul:nth-child(2) li:before {
+    content: "";
+    background-color: black;
+    border-radius: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    left: -30px;
+    top: 35%;
+}
+
+.page-container ul:nth-child(2) li:after {
+    content: "";
+    background-color: black;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -25px;
+    top: 35%;
+}
+
+button {
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px 2px #888888;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Roadmap.sh Changelog Component">
+
+        <!-- There's no law requiring they heed but, this meta tag inform robots not to index the site by search engines -->
+        <meta name="robots" content="index, follow" />
+        <title>Changelog Component</title>
+
+        
+        <meta name="author" content="BAMTEFA Olorunshogo Moses">
+        <meta name="description" content="BAMTEFA Olorunshogo Moses' Basic HTML Website showcasing projects, workexperiences, education and reviews from my teachers" >
+        <meta name="keywords" content="Full Stack Developer, HTML5, CSS3, JavaScript, TailwindCSS, Vite, Vue, Nuxt">
+        <meta property="og:title" content="BAMTEFA Olorunshogo Moses - Web Developer">
+        <meta property="og:description" content="Check out BAMTEFA Olorunshogo Moses professional background and skills.">
+        <meta property="og:url" content="https://mutonatheton.me/">
+
+        <!-- STYLESHEET -->
+         <link rel="stylesheet" href="/Frontend projects/04 Changelog Component/style.css">
+
+        <!-- FAVICON LINK -->
+        <link rel="shortcut icon" href="./Roadmap_icon.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="page-container">
+            <header>
+                <h1>Changelog</h1>
+                <p>Here's everything we have shipped in the past few days</p>
+            </header>
+
+            <div>
+                <ul id="dates">
+                    <li>September 3, </li>
+                    <li>August 28, </li>
+                    <li>August 25, </li>
+                    <li>August 22, </li>
+                    <li>August 15, </li>
+                    <li>August 10, </li>
+                    <li>August 1, </li>
+                </ul>
+
+                <ul>
+                    <li>Announcing Projects on Frontend Roadmap</li>
+                    <li>Build your learning habits with learning streaks</li>
+                    <li>Git and GitHub Roadmap</li>
+                    <li>Submit your project solution and get feedback</li>
+                    <li>Backend Project Ideas</li>
+                    <li>Redls roadmap</li>
+                    <li>Changelog page to help you stay in the loop</li>
+                </ul>
+            </div>
+
+            <button>Visit Complete Changelog</button>
+
+        </div>
+
+        <script>
+            let currentYear = new Date().getFullYear();
+            let datesDiv = document.getElementById('dates');
+            let listItems = datesDiv.querySelectorAll('li');
+
+            for (let i = 0; i < listItems.length; i++) {
+                listItems[i].textContent = listItems[i].textContent + ' ' + currentYear;
+            }
+        </script>
+    </body>
+</html>
