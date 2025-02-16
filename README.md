@@ -20,6 +20,9 @@ This repository will contain the solutions to the projects I will be attempting 
 03. Personal Portfolio
 [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/03-Personal-Portfolio)
 
-[Roadmap shareable link](https://roadmap.sh/projects/portfolio-website/solutions?u=66d6872d553501e3c3d2deb9) -->
+[Roadmap shareable link](https://roadmap.sh/projects/portfolio-website/solutions?u=66d6872d553501e3c3d2deb9) 
 
-04. Changelog [link]()
+04. Changelog Component [link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/04%20Changelog%20Component)
+[Shareable Link](https://roadmap.sh/projects/changelog-component/solutions?u=66d6872d553501e3c3d2deb9)
+
+-->

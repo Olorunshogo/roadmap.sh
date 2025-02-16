@@ -1,0 +1,140 @@
+
+:root {
+    --top-margin: 10%;
+}
+
+
+/* body {
+    margin: auto;
+} */
+
+.page-container {
+    max-width: 600px;
+    margin: auto;
+    font-size: 0.7rem;
+}
+
+section {
+    margin-top: 2rem;;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+/* FIRST SECTION */
+.first-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: var(--big-gap);
+}
+
+.first-section .review-one,
+.first-section .review-two {
+    display: grid;
+    gap: var(--big-gap);
+}
+
+.first-section .review-one > div:nth-child(1),
+section:nth-child(2) > div:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+
+.first-section .review-one > div:nth-child(1) > p:nth-child(2) {
+    margin-top: var(--small-gap)
+}
+
+.first-section .review-one > div:nth-child(1),
+.first-section .review-two,
+section:nth-child(2) > div:nth-child(2) {
+    box-shadow: -1px -1px 0px 1px black, 1px 1px 1px 1px black;
+    border-radius: 20px;
+    padding: var(--big-gap);
+    height: 100%;
+}
+
+.first-section .review-one > div:nth-child(2),
+.first-section .review-two > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: var(--small-gap);
+} 
+
+.first-section div div:nth-child(2) img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.role {
+    font-size: 10px;
+}
+
+/* SECOND SECTION */
+section:nth-child(2) {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: var(--small-gap);
+}
+
+section:nth-child(2) img {
+    border-radius: 1.5rem;
+    width: 150px;
+    height: 100%;
+}
+
+section:nth-child(2) > div:nth-child(2) > p {
+    margin-bottom: var(--small-gap)
+}
+
+/* THIRD SECTION */
+section:nth-child(3) {
+    position: relative;
+    display: grid;
+    gap: var(--big-gap);
+    text-align: center;
+    border-radius: 20px;
+    padding: var(--big-gap);
+    height: fit-content;
+    box-shadow: -1px -1px 0px 1px black, 1px 1px 1px 1px black;
+}
+
+section:nth-child(3) > div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    gap: var(--big-gap);
+    position: relative;
+}
+
+section:nth-child(3) > div > p {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+section:nth-child(3) img:nth-child(2),
+section:nth-child(3) img:nth-child(4) {
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+}
+
+section:nth-child(3) img:nth-child(2),
+section:nth-child(3) img:nth-child(3),
+section:nth-child(3) img:nth-child(4) {
+    border-radius: 50%;
+}
+
+section:nth-child(3) img:nth-child(3) {
+    width: 45px;
+    height: 45px;
+}
+
