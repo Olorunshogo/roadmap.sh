@@ -26,3 +26,5 @@ This repository will contain the solutions to the projects I will be attempting 
 [Shareable Link](https://roadmap.sh/projects/changelog-component/solutions?u=66d6872d553501e3c3d2deb9)
 
 -->
+
+05. Testimonial Cards [Link] (https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/05%20Testimonial%20Cards)
