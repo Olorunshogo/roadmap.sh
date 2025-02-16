@@ -8,8 +8,9 @@ This repository will contain the solutions to the projects I will be attempting 
 
 <!-- 1. [Single-Page-CV](https://roadmap.sh/projects/single-page-cv)
 2. [Basic HTML Website](https://roadmap.sh/projects/basic-html-website)
-3. [Portfolio Website](https://roadmap.sh/projects/portfolio-website) -->
-4. Changelog Component [Link](https://roadmap.sh/projects/changelog-component)
+3. [Portfolio Website](https://roadmap.sh/projects/portfolio-website) 
+4. Changelog Component [Link](https://roadmap.sh/projects/changelog-component)-->
+5. Testimonial Cards [link] (https://roadmap.sh/projects/testimonial-cards)
 
 
 ## Solutions
