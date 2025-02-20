@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Practice of Tabs for roadmap.sh">
+
+        <!-- There's no law requiring they heed but, this meta tag inform robots not to index the site by search engines -->
+        <meta name="robots" content="index, follow" />
+        <title>Tabs</title>
+        
+        <meta name="author" content="BAMTEFA Olorunshogo Moses">
+        <meta name="description" content="Practice of Tabs showcasing projects, workexperiences, education and reviews from my teachers" >
+        <meta name="keywords" content="Full Stack Developer, HTML5, CSS3, JavaScript, TailwindCSS, Typescript, Vite, Vue, Nuxt">
+        <meta property="og:title" content="BAMTEFA Olorunshogo Moses - Web Developer">
+        <meta property="og:description" content="Check out BAMTEFA Olorunshogo Moses professional background and skills.">
+        <meta property="og:url" content="https://github.com/Olorunshogo/">
+        <meta property="og:image" content="https://th.bing.com/th/id/OIP.kiz51EgEgMRq7KAyWPohTAHaEK?rs=1&pid=ImgDetMain"/>
+
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="../general-styles.css">
+        <link rel="stylesheet" href="./tabs.css">
+
+        <!-- FAVICON LINK -->
+        <link rel="shortcut icon" href="../Roadmap_icon.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="page-container">
+            <div class="border-wrapper">
+                <div class="tabs">
+                    <button class="tab-button" onclick="showTab(0)">First Tab</button>
+                    <button class="tab-button" onclick="showTab(1)">Second Tab</button>
+                    <button class="tab-button" onclick="showTab(2)">Third Tab</button>
+                    <button class="tab-button" onclick="showTab(3)">Fourth Tab</button>
+                </div>
+    
+                <div class="tab-content">
+                    <div class="tab-item" id="tab1">First Tab content to be displayed here.</div>
+                    <div class="tab-item" id="tab2">Second Tab content to be displayed here.</div>
+                    <div class="tab-item" id="tab3">Third Tab content to be displayed here.</div>
+                    <div class="tab-item" id="tab4">Fourth Tab content to be displayed here.</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./tabs.js"></script>
+    </body>
+</html>
