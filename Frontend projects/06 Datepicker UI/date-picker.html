@@ -20,7 +20,7 @@
 
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="/Frontend projects/general-styles.css">
-        <link rel="stylesheet" href="/Frontend projects/06 Dateoicker UI/style.css">
+        <link rel="stylesheet" href="/Frontend projects/06 Datepicker UI/date-picker.css">
 
         <!-- FAVICON LINK -->
         <link rel="shortcut icon" href="./Roadmap_icon.png" type="image/x-icon">
@@ -29,8 +29,8 @@
     <body>
         <div class="page-container">
             <div>
-                <input type="date" name="date" id="date-picker">
-                <button class="calendar-btn" onclick="document.getElementById('date-picker').focus();">
+                <input type="date" name="date" id="date-picker" aria-labelledby="date-picker-label">
+                <button class="calendar-btn" onclick="document.getElementById('date-picker').focus();" aria-label="Open calendar">
                     📅
                 </button>
             </div>

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Roadmap.sh Accessible Form UI">
+
+        <!-- There's no law requiring they heed but, this meta tag inform robots not to index the site by search engines -->
+        <meta name="robots" content="index, follow" />
+        <title>Accessible Form UI</title>
+
+        
+        <meta name="author" content="BAMTEFA Olorunshogo Moses">
+        <meta name="description" content="BAMTEFA Olorunshogo Moses'Accessible Form UII showcasing projects, workexperiences, education and reviews from my teachers" >
+        <meta name="keywords" content="Full Stack Developer, HTML5, CSS3, JavaScript, TailwindCSS, Typescript, Vite, Vue, Nuxt">
+        <meta property="og:title" content="BAMTEFA Olorunshogo Moses - Web Developer">
+        <meta property="og:description" content="Check out BAMTEFA Olorunshogo Moses professional background and skills.">
+        <meta property="og:url" content="https://mutonatheton.me/">
+
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="/Frontend projects/general-styles.css">
+        <link rel="stylesheet" href="/Frontend projects/07 Accessible Form UI/form-ui.css">
+
+        <!-- FAVICON LINK -->
+        <link rel="shortcut icon" href="./Roadmap_icon.png" type="image/x-icon">
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+
+    <body>
+        <div class="page-container">
+            <section>
+                <div class="form">
+                    <form action="#" aria-labelledby="profile-form">
+                        <h1 id="profile-form">Update Profile</h1>
+                        <div>
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="name" id="full-name" autocomplete="full-name" required placeholder="What should we call you?" aria-required="true">
+                        </div>
+                        <div>
+                            <label for="Email">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="email" required placeholder="john@doe.com" aria-required="true">
+                            <p id="email-error" aria-live="assertive">Email is already taken</p>
+                        </div>
+                        
+                        <div class="password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" autocomplete="password" required placeholder="xxxxxxxxx" aria-required="true">
+                            <span id="eye-icon" onclick="togglePasswordVisibility()" class="fa fa-eye"></span>
+                        </div>
+
+                        <div>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" autocomplete="confirm-password" required placeholder="xxxxxxxxx" aria-required="true">
+                            <span id="confirm-eye-icon" onclick="toggleConfirmPasswordVisibility()" class="fa fa-eye"></span>
+                        </div>
+    
+                        <button type="submit" aria-label="Submit profile updates">Update Profile</button>
+                    </form>
+                </div>
+    
+                <div class="profile-percent">
+
+                    <div class="progress-container" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Profile Completeness: 65% completed">
+                        <!-- Outer Circle -->
+                        <svg class="progress-circle" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="background" cx="60" cy="60" r="50" stroke="#ddd" stroke-width="8" fill="none"/>
+                            <circle class="foreground" cx="60" cy="60" r="50" stroke="#4CAF50" stroke-width="8" fill="none" stroke-dasharray="314" stroke-dashoffset="109.4"/>
+                        </svg>
+                        <!-- Inner Text showing progress -->
+                        <div class="progress-text">
+                            <span>65%</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Profile Completeness</p>
+                    </div>
+
+                    <div class="checklist">
+                        <p>Create Account</p>
+                        <p>Update Roadmap Progress</p>
+                        <p>Setup Public Profile</p>
+                        <p>Complete your first project</p>
+                        <p>Invite your Friends</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script>
+            function togglePasswordVisibility() {  
+                var passwordField = document.getElementById('password');
+                var eyeIcon = document.getElementById('eye-icon');  
+
+                if (passwordField.type === 'password') {
+                    passwordField.type = 'text';
+                    eyeIcon.classList.remove('fa-eye');
+                    eyeIcon.classList.add('fa-eye-slash');
+                } else {
+                    passwordField.type = 'password';
+                    eyeIcon.classList.remove('fa-eye-slash');
+                    eyeIcon.classList.add('fa-eye');
+                }                
+            }
+
+            function toggleConfirmPasswordVisibility() {
+                var confirmPasswordField = document.getElementById('confirm-password');            
+                var confirmEyeIcon = document.getElementById('confirm-eye-icon');
+
+                if (confirmPasswordField.type === 'password') {
+                    confirmPasswordField.type = 'text';
+                    confirmEyeIcon.classList.remove('fa-eye');
+                    confirmEyeIcon.classList.add('fa-eye-slash');
+                } else {
+                    confirmPasswordField.type = 'password';
+                    confirmEyeIcon.classList.remove('fa-eye-slash');
+                    confirmEyeIcon.classList.add('fa-eye');
+                }
+            }
+        </script>
+    </body>
+</html>
