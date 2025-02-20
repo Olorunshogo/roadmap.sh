@@ -33,4 +33,4 @@ This repository will contain the solutions to the projects I will be attempting 
 -->
 7.  Accessible Form UI [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/07%20Accessible%20Form%20UI) [Shareable Link](https://roadmap.sh/projects/accessible-form-ui/solutions?u=66d6872d553501e3c3d2deb9)
    
-8.  Image Grid Layout [Link](https://roadmap.sh/projects/image-grid) [Shareable Link]()
+8.  Image Grid Layout [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/08%20Image%20Grid%20Layout) [Shareable Link](https://roadmap.sh/projects/image-grid/solutions?u=66d6872d553501e3c3d2deb9)
