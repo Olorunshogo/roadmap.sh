@@ -27,11 +27,17 @@ This repository will contain the solutions to the projects I will be attempting 
     + Create a tooltip for navigation items using only HTML and CSS.
 + Tabs - [Link](https://roadmap.sh/projects/simple-tabs)
   + Create a simple tabs component using only HTML, CSS, and JavaScript.
++ Cookie Consent - [Link](https://roadmap.sh/projects/cookie-consent)
+  + Create a simple cookie consent banner using JavaScript.
++ Restricted Textarea - [Link](https://roadmap.sh/projects/restricted-textarea)
+  + Create a textarea with a live character count and a max character limit.
+  
+
 
 
 ## Project Solutions
 
-01. Single-Page CV - [Shareable Link](https://roadmap.sh/projects/single-page-cv/solutions?u=66d6872d553501e3c3d2deb9)
+01. Single-Page CV - [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/01%20Single-page%20CV) - [Shareable Link](https://roadmap.sh/projects/single-page-cv/solutions?u=66d6872d553501e3c3d2deb9)
 02. Basic HTML Website - 
 [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/02-Basic%20HTML%20Websites) - [Shareable Link](https://roadmap.sh/projects/basic-html-website/solutions?u=66d6872d553501e3c3d2deb9)
 
@@ -50,3 +56,4 @@ This repository will contain the solutions to the projects I will be attempting 
 8.  Image Grid Layout - [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/08%20Image%20Grid%20Layout) - [Shareable Link](https://roadmap.sh/projects/image-grid/solutions?u=66d6872d553501e3c3d2deb9)
 
 9. Tooltip UI - [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/09%20Tooltip%20UI) - [Shareable Link]()
+10. Tabs - [Link]() - [shareable Link]()

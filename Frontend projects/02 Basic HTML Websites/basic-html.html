@@ -36,7 +36,7 @@
                 </div>
 
                 <nav role="navigation" title="Navigation links">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" title="Home">Home</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Home">Home</a>
                     <a href="./projects.html" target="_blank" rel="noopener noreferrer" title="Projects">/ Projects</a>
                     <a href="./articles.html" target="_blank" rel="noopener noreferrer" title="Articles">/ Articles</a>
                     <a href="./contact.html" target="_blank" rel="noopener noreferrer" title="Contact">/ Contact</a>
@@ -88,11 +88,6 @@
                         <li>Object Oriented Programming</li>
                         <li>Data Structures and Algorithms</li>
                         <li>Web Engineering</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Human Computer Interaction</li>
-                        <li>Computer Graphics</li>
-                        <li>Distributed Database Systems</li>
-                        <li>Discreel Mathematics</li>
                     </ul>
                 </div>
             </section>
@@ -126,9 +121,19 @@
             </section>
 
             <footer>
-                <h2>Socials</h2>
-                <p>&COPY; all rights reserved 2025</p>
+                <p>
+                    &COPY; all rights reserved 
+                    <span id="currentYear"></span>
+                    <a href="https://www.linkedin.com/in/olorunshogo-bamtefa-0839601b4/" target="_blank">LinkedIn</a >
+                    <a href="https://github.com/Olorunshogo" target="_blank">GitHub</a>
+                    <a href="https://bom-portfolio.vercel.app/" target="_blank">Portfolio</a>                        
+                </p>
             </footer>
         </div>
+
+        <script>
+            const date = new Date();
+            document.getElementById('currentYear').innerHTML = date.getFullYear();
+        </script>
     </body>
 </html>

@@ -31,7 +31,7 @@
 
     <body>
         <div class="page-container">
-            <nav class=".navbar">
+            <nav class="navbar">
                 <a href="#home" target="_blank">Home</a>
 
                 <a href="#projects" class="tooltip" target="_blank">
@@ -41,6 +41,24 @@
 
                 <a href="#contact" target="_blank">Blog</a>
             </nav>
+
+            <footer>
+                <div>
+                    <p>
+                        &COPY; all rights reserved 
+                        <span id="currentYear"></span>
+                        <a href="https://www.linkedin.com/in/olorunshogo-bamtefa-0839601b4/" target="_blank">LinkedIn</a >
+                        <a href="https://github.com/Olorunshogo" target="_blank">GitHub</a>
+                        <a href="https://bom-portfolio.vercel.app/" target="_blank">Portfolio</a>                        
+                    </p>
+                </div>
+            </footer>
         </div>
+        
+
+        <script>
+            const date = new Date();
+            document.getElementById('currentYear').innerHTML = date.getFullYear();
+        </script>
     </body>
 </html>

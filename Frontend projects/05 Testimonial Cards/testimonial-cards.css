@@ -1,17 +1,13 @@
 
-:root {
-    --top-margin: 10%;
-}
-
-
 .page-container {
     max-width: 600px;
+    height: 100%;
     margin: auto;
     font-size: 0.7rem;
 }
 
 section {
-    margin-top: 2rem;;
+    margin-top: 1rem;
 }
 
 img {
@@ -83,7 +79,7 @@ section:nth-child(2) {
 section:nth-child(2) img {
     border-radius: 1.5rem;
     width: 150px;
-    height: 100%;
+    height: auto;
 }
 
 section:nth-child(2) > div:nth-child(2) > p {

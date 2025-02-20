@@ -19,7 +19,7 @@
         <meta property="og:image" content="https://th.bing.com/th/id/OIP.kiz51EgEgMRq7KAyWPohTAHaEK?rs=1&pid=ImgDetMain"/>
 
         <!-- STYLESHEETS -->
-        <link rel="stylesheet" href="../Roadmap_icon.png">
+        <link rel="stylesheet" href="../general-styles.css">
         <link rel="stylesheet" href="./testimonial-cards.css">
 
         <!-- FAVICON LINK -->
@@ -37,7 +37,7 @@
                     </div>
 
                     <div>
-                        <img src="/Imgs/Roadmap_icon.png" alt="Artem Jones">
+                        <img src="../Roadmap_icon.png" alt="Artem Jones">
                         <div class="desc">
                             <p class="name">Artem Jones</p>
                             <p class="role">Junior Frontend  Developer</p>
@@ -51,7 +51,7 @@
                     </div>
 
                     <div>
-                        <img src="/Imgs/Roadmap_icon.png" alt="Artem Jones">
+                        <img src="../Roadmap_icon.png" alt="Artem Jones">
                         <div class="desc">
                             <p class="name">Artem Jones</p>
                             <p class="role">Junior Frontend  Developer</p>
@@ -62,7 +62,7 @@
 
             <section>
                 <div>
-                    <img src="/Imgs/Roadmap_icon.png" alt="Jackie Mackle">
+                    <img src="../Roadmap_icon.png" alt="Jackie Mackle">
                 </div>
 
                 <div>
@@ -79,15 +79,32 @@
 
                 <div>
                     <p>&lt;</p>
-                    <img src="/Imgs/Roadmap_icon.png" alt="Artem jones">
-                    <img src="/Imgs/Roadmap_icon.png" alt="Artem jones">
-                    <img src="/Imgs/Roadmap_icon.png" alt="Artem jones">
+                    <img src="../Roadmap_icon.png" alt="Artem jones">
+                    <img src="../Roadmap_icon.png" alt="Artem jones">
+                    <img src="../Roadmap_icon.png" alt="Artem jones">
                     <p>&gt;</p>
                 </div>
 
                 <p>Artem Jones</p>
             </section>
         </div>
+
+        <footer>
+            <div>
+                <p>
+                    &COPY; all rights reserved 
+                    <span id="currentYear"></span>
+                    <a href="https://www.linkedin.com/in/olorunshogo-bamtefa-0839601b4/" target="_blank">LinkedIn</a >
+                    <a href="https://github.com/Olorunshogo" target="_blank">GitHub</a>
+                    <a href="https://bom-portfolio.vercel.app/" target="_blank">Portfolio</a>                        
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            const date = new Date();
+            document.getElementById('currentYear').innerHTML = date.getFullYear();
+        </script>
     </body>
 
 </html>

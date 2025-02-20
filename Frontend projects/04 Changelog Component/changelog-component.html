@@ -59,14 +59,27 @@
 
         </div>
 
-        <script>
-            let currentYear = new Date().getFullYear();
-            let datesDiv = document.getElementById('dates');
-            let listItems = datesDiv.querySelectorAll('li');
+        <footer>
+            <p>
+                &COPY; all rights reserved 
+                <span id="currentYear"></span>
+                <a href="https://www.linkedin.com/in/olorunshogo-bamtefa-0839601b4/" target="_blank">LinkedIn</a >
+                <a href="https://github.com/Olorunshogo" target="_blank">GitHub</a>
+                <a href="https://bom-portfolio.vercel.app/" target="_blank">Portfolio</a>                        
+            </p>
+        </footer>
+    
 
-            for (let i = 0; i < listItems.length; i++) {
-                listItems[i].textContent = listItems[i].textContent + ' ' + currentYear;
-            }
+        <script>
+            const date = new Date();
+            let currentYear = new Date().getFullYear();
+                let datesDiv = document.getElementById('dates');
+                let listItems = datesDiv.querySelectorAll('li');
+
+                for (let i = 0; i < listItems.length; i++) {
+                    listItems[i].textContent = listItems[i].textContent + ' ' + currentYear;
+                }
+            document.getElementById('currentYear').innerHTML = date.getFullYear();
         </script>
     </body>
 </html>
