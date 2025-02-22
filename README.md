@@ -55,5 +55,8 @@ This repository will contain the solutions to the projects I will be attempting 
    
 8.  Image Grid Layout - [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/08%20Image%20Grid%20Layout) - [Shareable Link](https://roadmap.sh/projects/image-grid/solutions?u=66d6872d553501e3c3d2deb9)
 
-9. Tooltip UI - [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/09%20Tooltip%20UI) - [Shareable Link]()
-10. Tabs - [Link]() - [shareable Link]()
+9. Tooltip UI - [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/09%20Tooltip%20UI) - [Shareable Link](https://roadmap.sh/projects/tooltip-ui/solutions?u=66d6872d553501e3c3d2deb9)
+    
+10. Tabs - [Link](https://github.com/Olorunshogo/roadmap.sh/tree/main/Frontend%20projects/10%20Tabs) - [shareable Link](https://roadmap.sh/projects/simple-tabs/solutions?u=66d6872d553501e3c3d2deb9)
+
+11. Cookie consent - [Link]() - [Shareable Link]()
