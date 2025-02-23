@@ -1,49 +1,41 @@
 
-// Function to create a cookie
-// function setCookie(cname, cvalue, exdays ) {
-//     const date = new Date();
-//     date.setTime(date.getTime() + (exdays * 24 * 60 * 60 * 1000));
-//     let expires = "expires=" + date.toUTCString();
-//     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-// }
+const showCookieBanner = () => {
+    if (!localStorage.getItem('cookiesAccepted')) {
+        const cookieBanner = document.createElement('div');
+        const overlay = document.createElement('div');
+        const footer = document.querySelector('.footer');
 
-// // Function to read a cookie
-// function getCookie(cname) {
-//     let name = cname + "=";
-//     let decodedCookie = decodeURIComponent(document.cookie);
-//     let ca = decodedCookie.split(';');
-//     for (let i = 0; i < ca.length; i++) {
-//         let c = ca[i];
-//         while (c.charAt(0) == ' ') {
-//           c = c.substring(1);  
-//         }
+        cookieBanner.className = 'cookie-banner';
+        cookieBanner.innerHTML = `<p>We use cookies to improve your user experience.</p>
+        <button class="acceptButton">I like cookies</button>`
 
-//         if (c.indexOf(name) == 0) {
-//             return c.substring(name.length, c.length);            
-//         }
-//     }
-//     return "";
-// }
+        overlay.className = 'overlay';
 
-// // Adding Event Listener to the like cookies button
-// function acceptConsent() {
-//     setCookie('user_cookie_consent', true, 30); // Set cookie for 30 days
-//     let cookieConsentStatus = getCookie("user_cookie_consent");
+        // footer.after(cookieBanner);
+        cookieBanner.after(overlay);
 
-//     // document.addEventListener('DOMContentLoaded', function() {
+        const acceptButton = cookieBanner.querySelector('.acceptButton');
+        handleCookieAcceptance(acceptButton, cookieBanner, overlay);
+    }
+}
 
-//     // });
-    
-//     if(cookieConsentStatus != "") {
-//         // document.getElementById("cookieNotice").style.display = "none";
-//     } else {
-//         document.getElementById("cookieNotice").style.display = "block";
-//         document.getElementById("acceptButton").addEventListener('click', function() {
-//             acceptConsent();
-//             document.getElementById("cookieNotice").style.display = "none";
-//         });
-//     }
-// }
+document.addEventListener('DOMContentLoaded', () => {
+    showCookieBanner();
+})
 
+function handleCookieAcceptance(acceptButton, cookieBanner, overlay) {
+    acceptButton.addEventListener('click', () => {
+        localStorage.setItem('cookiesAccepted', 'true');
+
+        cookieBanner.remove();
+        overlay.remove();
+    });
+}
+
+function showDate() {
+    const date = new Date();
+    document.getElementById('currentYear').innerHTML = date.getFullYear();
+}
+showDate();
 
 

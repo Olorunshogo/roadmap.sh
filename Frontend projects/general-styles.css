@@ -6,13 +6,13 @@
 /* OPEN SANS */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*,
+/* *,
 *:after,
 *:before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 
 /* HEADERS */
 h1, 

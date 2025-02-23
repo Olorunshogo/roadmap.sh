@@ -1,0 +1,52 @@
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 760px;
+    height: auto;
+    margin: auto;
+    gap: var(--big-gap);
+}
+
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+textarea {
+    margin: auto;
+    border-radius: 1rem;
+    border: 2px solid #ccc;
+    font-size: 14px;
+    color: inherit;
+    outline: none;
+    width: 80%;
+    height: 50px;
+    resize: none;
+    transition: border-color 0.3s ease;
+    padding-bottom: 2rem;
+    overflow-y: scroll;
+}
+
+textarea.limit-reached {
+    border-color: red;
+    outline-color: red;
+}
+
+#charCount {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+  }
+  
+  #charCount.limit-reached {
+    color: red;
+  }
